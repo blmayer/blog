@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{{static/head.html}}
+{{head.html}}
 
 <body>
-	{{static/header.html}}
 	<h2><a name="choosing linux">my story choosing a linux distro</a></h2>
 	<p>
 		I started using linux when I was 13/14 yo, can't remember exactly,
