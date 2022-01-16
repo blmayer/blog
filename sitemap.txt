@@ -1,0 +1,12 @@
+blog.blmayer.dev/posts/prompt.png
+blog.blmayer.dev/posts/deep.html.tpl
+blog.blmayer.dev/posts/full-terminal.png
+blog.blmayer.dev/posts/awslambdarpc.html.tpl
+blog.blmayer.dev/posts/sound-of-letters.html.tpl
+blog.blmayer.dev/posts/asciichartr.html.tpl
+blog.blmayer.dev/posts/ps1.html.tpl
+blog.blmayer.dev/posts/gonuts.html.tpl
+blog.blmayer.dev/posts/gopip.html.tpl
+blog.blmayer.dev/posts/history.png
+blog.blmayer.dev/posts/choosing-a-linux-distro.html.tpl
+blog.blmayer.dev/index.html.tpl
