@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-{{static/head.html}}
+{{head.html}}
 
 <body>
     <h1>blmayer's blog page</h1>
