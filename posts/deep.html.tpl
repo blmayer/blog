@@ -3,7 +3,6 @@
 {{head.html}}
 
 <body>
-    {{header.html}}
     <h2><a name="deep">deep</a></h2>
     <p>
         deep is a R package for building deep neural networks I developed
