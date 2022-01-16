@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{{static/head.html}}
+{{head.html}}
 
 <body>
-    {{static/header.html}}
     <h2><a name="gopip">gopip</a></h2>
     <p>
         gopip is a container that builds python3 packages and return
