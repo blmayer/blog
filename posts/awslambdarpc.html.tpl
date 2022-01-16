@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{{static/head.html}}
+{{head.html}}
 
 <body>
-    {{static/header.html}}
     <h2><a name="app">awslambdarpc</a></h2>
     <p>
         awslambdarpc is a small utility made to help debugging
