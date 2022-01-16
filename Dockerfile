@@ -1,25 +1,12 @@
 FROM golang:1.16 as builder
 
-RUN cat << EOF > /root/main.go \
-package main
+COPY . /root
 
-import (
-	"net/http"
-	"os"
-)
-
-func main() {
-	e := http.ListenAndServe(":"+os.Getenv("PORT"), http.FileServer(http.Dir("")))
-	if e != nil {
-		panic(e)
-	}
-}
-EOF
-
-RUN cd /root && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+RUN cd /root && \
+	curl "https://raw.githubusercontent.com/weblibs/template.sh/main/template" | sh
 
 FROM scratch
 
-COPY --from=builder /root/main /
+COPY --from=builder /root/out/ /
 
 CMD ["/main"]
