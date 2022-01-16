@@ -1,4 +1,6 @@
-FROM golang:1.16 as builder
+FROM alpine as builder
+
+RUN apk add tree
 
 COPY . /root
 
