@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{{static/head.html}}
+{{head.html}}
 
 <body>
-    {{static/header.html}}
     <h2><a name="app">gonuts</a></h2>
     <p>
         gonuts is a small tool just like
