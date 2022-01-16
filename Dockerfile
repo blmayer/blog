@@ -1,6 +1,6 @@
 FROM alpine as builder
 
-RUN apk add tree
+RUN apk add tree curl
 
 COPY . /root
 
