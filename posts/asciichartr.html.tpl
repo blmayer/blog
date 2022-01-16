@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{{static/head.html}}
+{{head.html}}
 
 <body>
-    {{static/header.html}}
     <h2><a name="asciichartr">asciichartr</a></h2>
     <p>
         asciichartr is a R package that draws a plot on your console using
