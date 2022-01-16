@@ -1,14 +1,25 @@
 FROM golang:1.16 as builder
 
-COPY . /root/
+RUN cat << EOF > /root/main.go \
+package main
 
-RUN cd /root && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o main
+import (
+	"net/http"
+	"os"
+)
+
+func main() {
+	e := http.ListenAndServe(":"+os.Getenv("PORT"), http.FileServer(http.Dir("")))
+	if e != nil {
+		panic(e)
+	}
+}
+EOF
+
+RUN cd /root && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
 
 FROM scratch
 
 COPY --from=builder /root/main /
-COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
-
-EXPOSE 27017
 
 CMD ["/main"]
