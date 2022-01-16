@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{{static/head.html}}
+{{head.html}}
 
 <body>
-	{{static/header.html}}
 	<h2><a name="sound of letters">I hear the characters hitting the terminal</a></h2>
 	<p>
 		Sometimes i'm coding during the night, and seeing the output of a
