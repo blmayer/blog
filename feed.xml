@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>saucecode.bar</title>
+	<description>Programming posts from Brian Mayer's blog</description>
+	<link>https://saucecode.bar</link>
+	<atom:link rel="self" href="https:saucecode.bar/feed.xml" />
+	<item>
+		<title>sound-of-letters.html</title>
+		<link>https://saucecode.bar/posts/2021-12-18/sound-of-letters.html</link>
+		<description></description>
+	</item>
+	<item>
+		<title>choosing-a-linux-distro.html</title>
+		<link>https://saucecode.bar/posts/2021-11-25/choosing-a-linux-distro.html</link>
+		<description></description>
+	</item>
+	<item>
+		<title>ps1.html</title>
+		<link>https://saucecode.bar/posts/2021-10-20/ps1.html</link>
+		<description></description>
+	</item>
+	<item>
+		<title>gopip.html</title>
+		<link>https://saucecode.bar/posts/2021-09-27/gopip.html</link>
+		<description></description>
+	</item>
+	<item>
+		<title>awslambdarpc.html</title>
+		<link>https://saucecode.bar/posts/2021-09-21/awslambdarpc.html</link>
+		<description></description>
+	</item>
+	<item>
+		<title>gonuts.html</title>
+		<link>https://saucecode.bar/posts/2021-08-30/gonuts.html</link>
+		<description></description>
+	</item>
+	<item>
+		<title>asciichartr.html</title>
+		<link>https://saucecode.bar/posts/2021-08-10/asciichartr.html</link>
+		<description></description>
+	</item>
+</channel>
+</rss>

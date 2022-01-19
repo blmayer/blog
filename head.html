@@ -29,6 +29,7 @@
 		body {
 			max-width: 800px;
 			margin: 0 auto;
+			padding: 30px 10px;
 			font-family: sans-serif;
 		}
 
@@ -36,7 +37,6 @@
 			border: 1px dotted black;
 			outline: 1px dotted black;
 			padding: 30px;
-			margin: 10px;
 			position: relative;
 		}
 
@@ -63,7 +63,9 @@
 		}
 
 		header {
-			margin: 30px 10px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 		}
 
 		h1 {
@@ -75,7 +77,7 @@
 			color: whitesmoke;
 		}
 
-		header>a {
+		a.button {
 			color: white;
 			text-decoration: none;
 			border: 2px solid white;
