@@ -1,4 +1,4 @@
-FROM alpine as builder
+FROM alpine:3.15 as builder
 
 RUN apk add tree curl
 
