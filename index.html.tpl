@@ -12,10 +12,9 @@
 	<br>
         {{!tree -H 'posts' -P '*.tpl' -r posts | tail -n +32 | head -n -16 | sed 's/.tpl//g'}}
     </main>
-    <p>
+    <br>
     <a class="button" href="/feed.xml">RSS</a>
     <a class="button" href="https://blmayer.dev/whoami.html">About the author</a>
-    </p>
 </body>
 
 </html>
