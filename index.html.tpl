@@ -3,7 +3,10 @@
 {{head.html}}
 
 <body>
-    <h1>blmayer's blog page</h1>
+    <header>
+        <h1>blmayer's blog page</h1>
+        <a href="https://raw.githubusercontent.com/blmayer/blog/main/index.html.tpl">View Sauce</a>
+    </header>
     <center>
         <pre>
 |"""""""i"""""""""""""i"""""""""""""i"""""""""""""i"""""""""""""i"""""""|
