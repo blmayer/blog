@@ -15,6 +15,11 @@
     <br>
     <a class="button" href="/feed.xml">RSS</a>
     <a class="button" href="https://blmayer.dev/whoami.html">About the author</a>
+    <footer>
+    <p>
+	This work © 2022 by Brian Mayer is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+    </p>
+    </footer>
 </body>
 
 </html>
