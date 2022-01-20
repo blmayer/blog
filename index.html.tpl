@@ -7,6 +7,7 @@
         <h1>blmayer's blog page</h1>
         <a class="button" href="https://raw.githubusercontent.com/blmayer/blog/main/index.html.tpl">View Sauce</a>
     </header>
+    <p>a developer walks into a bar...</p>
     <main>
         <b>posts:</b>
         <ul>
