@@ -25,7 +25,7 @@
         máxima" parece um número grande, e não zero.
     </p>
     <p>
-        Então <b>use uma escala crescente para as prioridades<b>, pois sempre
+        Então <b>use uma escala crescente para as prioridades</b>, pois sempre
         haverá espaço para uma tarefa mais prioritária: se sua tarefa
         com maior prioridade é a 10, e uma nova tarefa mais urgente aparece,
         ela pode ser a prioridade 20. Assim ela será a maior prioridade, e
