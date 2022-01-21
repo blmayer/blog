@@ -40,14 +40,6 @@
 			position: relative;
 		}
 
-		section {
-			float: inline-end;
-			border: 1px dotted black;
-			outline: 1px dotted black;
-			padding: 30px;
-			position: relative;
-		}
-
 		main:before {
 			content: " ";
 			position: absolute;
@@ -60,6 +52,36 @@
 		}
 
 		main:after {
+			content: " ";
+			position: absolute;
+			top: 1px;
+			left: 1px;
+			right: 1px;
+			bottom: 1px;
+			border: 1px dotted black;
+			z-index: -1;
+		}
+
+		section {
+			float: inline-end;
+			border: 1px dotted black;
+			outline: 1px dotted black;
+			padding: 30px;
+			position: relative;
+		}
+
+		section:before {
+			content: " ";
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			border: 1px dotted black;
+			z-index: -1;
+		}
+
+		section:after {
 			content: " ";
 			position: absolute;
 			top: 1px;
@@ -122,6 +144,14 @@
 			}
 
 			main:after {
+				border-color: white;
+			}
+
+			section:before {
+				border-color: white;
+			}
+
+			section:after {
 				border-color: white;
 			}
 
