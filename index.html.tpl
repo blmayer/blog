@@ -17,6 +17,21 @@
     <br>
     <a class="button" href="/feed.xml">RSS</a>
     <a class="button" href="https://blmayer.dev/whoami.html">About the author</a>
+    <section>
+        <b>what is this?</b>
+	<p>
+	    this is a small space on the internet, like a bar, where i'd
+	    like to share some thoughts in a casual way. you'll find here
+	    topics like programming, linux, mathematics and some random
+	    stuff.
+	</p>
+	<p>links</p>
+        <ul>
+	    <li><a href="https://blmayer.dev">my portfolio</a></li><br>
+	    <li><a href="https://somafm.com">soma fm</a>, a radio i like</li><br>
+	    <li><a href="https://tilderadio.org">tilde radio</a>, another</li><br>
+        </ul>
+    </section>
     <footer>
         <p>
             This work © 2022 by Brian Mayer is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC
