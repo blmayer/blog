@@ -14,7 +14,6 @@
             {{!for p in $(ls -r posts/*.html*); do p=${p/.tpl/} && echo "<li><a href=\"$p\">$(basename $p)</a></li><br>";done}}
         </ul>
     </main>
-    <br>
     <a class="button" href="/feed.xml">RSS</a>
     <a class="button" href="https://blmayer.dev/whoami.html">About the author</a>
     <section>
@@ -25,7 +24,7 @@
 	    topics like programming, linux, mathematics and some random
 	    stuff.
 	</p>
-	<p>links</p>
+	<p><b>links</b></p>
         <ul>
 	    <li><a href="https://blmayer.dev">my portfolio</a></li><br>
 	    <li><a href="https://somafm.com">soma fm</a>, a radio i like</li><br>
