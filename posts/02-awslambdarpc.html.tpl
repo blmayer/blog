@@ -32,29 +32,29 @@
         <li>Make a RPC call to it using a client (included here)</li>
         <li>Follow the code execution on visual studio</li>
     </ol>
-    <img src="vscode-files.png" alt="VSCode files needed">    
+    <center>
+        <img src="vscode-files.png" alt="VSCode files needed">    
+    </center>
 
     <h3>Needed software</h3>
-    <p>
-        <ul>
-            <li>
-                go package <a href="https://github.com/go-delve/delve">delve</a>
-                , install it running:
-                <kbd>go get github.com/go-delve/delve/cmd/dlv</kbd>
-            </li>
-            <li>
-                go package
-                <a href="https://github.com/blmayer/awslambdarpc">awslambdarpc</a>,
-                install running <kbd>go get github.com/blmayer/awslambdarpc</kbd>
-            </li>
-            <li>I used visual studio code but it should work on other IDEs</li>
-            <li>
-                And for convenience and speed, the
-                <a href="https://marketplace.visualstudio.com/items?itemName=DmitriyMuraviov.lunatic-file-picker">file-picker</a> 
-                VSCode extension.
-            </li>
-        </ul>
-    </p>
+    <ul>
+        <li>
+            go package <a href="https://github.com/go-delve/delve">delve</a>
+            , install it running:
+            <kbd>go get github.com/go-delve/delve/cmd/dlv</kbd>
+        </li>
+        <li>
+            go package
+            <a href="https://github.com/blmayer/awslambdarpc">awslambdarpc</a>,
+            install running <kbd>go get github.com/blmayer/awslambdarpc</kbd>
+        </li>
+        <li>I used visual studio code but it should work on other IDEs</li>
+        <li>
+            And for convenience and speed, the
+            <a href="https://marketplace.visualstudio.com/items?itemName=DmitriyMuraviov.lunatic-file-picker">file-picker</a> 
+            VSCode extension.
+        </li>
+    </ul>
     <p>
         Make sure your <em>$GOPATH/bin</em> folder is in your <em>path</em> so
         that VSCode can find them.
@@ -83,7 +83,7 @@
         CognitoIdentityPoolId string
         ClientContext         []byte
     }
-    </kdb>
+    </kbd>
     <p>
         Luckily the only field that matters to us is <em>Payload</em>, and it
         is simply the JSON that will be passed to the lambda as input. The last
@@ -235,23 +235,31 @@
             <kbd>Ctrl+Shift+d</kbd> on Windows, then select
             <em>build and run</em> and click run. Now your lambda function
             will be built and run.
-            <img src="vscode-debugger-pane.png" alt="VSCode debugging pane">
+            <center>
+                <img src="vscode-debugger-pane.png" alt="VSCode debugging pane">
+            </center>
         </li>
         <li>
             Then issue an event to your lambda using the run task command from
             the terminal bar with <kbd>Command+Shift+p</kbd> or
             <kbd>Ctrl+Shift+p</kbd> on Windows.
-            <img src="vscode-run-task.png" alt="Select run task">
+            <center>
+                <img src="vscode-run-task.png" alt="Select run task">
+            </center>
         </li>
         <li>
             Select <kbd>event</kbd>, a file picker will open to show available
             options from the <em>events</em> folder.
-            <img src="vscode-event.png" alt="Choose event">
+            <center>
+                <img src="vscode-event.png" alt="Choose event">
+            </center>
         </li>
         <li>
             Select the json you want and press enter, the json will be sent to
             the lambda function on the session and the debugger will trigger.
-            <img src="vscode-select.png" alt="Select which event">
+            <center>
+                <img src="vscode-select.png" alt="Select which event">
+            </center>
         </li>
     </ol>
     <p>
