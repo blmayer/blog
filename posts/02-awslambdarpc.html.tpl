@@ -72,7 +72,7 @@
         <em>InvokeRequest</em>. This type is defined in the 
         <kbd>aws-lambda-go/lambda/messages</kbd> package, and it's defined as:
     </p>
-    <kbd>
+    <pre>
     type InvokeRequest struct {
         Payload               []byte
         RequestId             string
@@ -83,7 +83,7 @@
         CognitoIdentityPoolId string
         ClientContext         []byte
     }
-    </kbd>
+    </pre>
     <p>
         Luckily the only field that matters to us is <em>Payload</em>, and it
         is simply the JSON that will be passed to the lambda as input. The last
@@ -100,7 +100,7 @@
         First we must build our lambda function with debugging symbols, the
         build command goes like this:
     </p>
-    <kbd>go build -v -gcflags='all=-N -l' your/file.go</kbd>
+    <pre>go build -v -gcflags='all=-N -l' your/file.go</pre>
     <p>
         The important part is this <kbd>-gcflags='all=-N -l'</kbd> which is the
         flag for turning on the debugging symbols. You may like to add it to your
@@ -116,11 +116,11 @@
         type is defined on your Handler function you pass to the
         <em>lambda.Start</em> function in the main file, here is an example:
     </p>
-    <kbd>
+    <pre>
     func Handler(req events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
         ...
     }
-    </kbd>
+    </pre>
     <p>
         In this case the input type for this function is an
         <em>APIGatewayProxyRequest</em> and the output type is a
@@ -138,7 +138,7 @@
         for the lambda function and how the debug session is to be setup,
         this is mine:
     </p>
-    <kbd>
+    <pre>
     {
         "version": "0.2.0",
         "configurations": [
@@ -162,7 +162,7 @@
             }
         ]
     }
-    </kbd>
+    </pre>
     <p>
         I chose port <em>8080</em> for the lambda, but you can change for
         whatever you prefer. This <em>compounds</em> field is very convenient:
@@ -186,7 +186,7 @@
     </ul>
 
     <p>This is the tasks.json file I'm currently using:</p>
-    <kbd>
+    <pre>
     {
         "version": "2.0.0",
         "inputs": [
@@ -218,7 +218,7 @@
             }
         ]
     }
-    </kbd>
+    </pre>
     <p>
         Some explanation here: the <em>masks</em> field is where you point
         the folder with your JSON events, you can change it at your discretion,
