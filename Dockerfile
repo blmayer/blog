@@ -8,10 +8,13 @@ RUN cd /root && \
 	rm -rf .git && \
 	curl "https://raw.githubusercontent.com/weblibs/template.sh/main/template" \
 	| sh && \
-	chmod a+x out/main
+	cd out && \
+	curl "https://raw.githubusercontent.com/weblibs/genmap.sh/main/genmap" \
+	| sh -s -- -d "https://saucecode.bar" posts/*.html > sitemap.txt && \
+	chmod a+x main
 
 FROM scratch
 
-COPY --from=builder /root/out/ /
+COPY --from=builder /root/out/ /www
 
-CMD ["/main"]
+CMD ["/www/main"]
