@@ -17,4 +17,6 @@ FROM scratch
 
 COPY --from=builder /root/out/ /www
 
-CMD ["/www/main"]
+WORKDIR /www
+
+CMD ["./main"]
