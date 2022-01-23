@@ -11,7 +11,7 @@
     <article>
         <b>posts:</b>
         <ul>
-            {{!for p in $(ls -r posts/*.html*); do p=${p/.tpl/} && echo "<li><a href=\"$p\">$(basename $p)</a></li><br>";done}}
+            {{!for p in $(ls -r posts/*.html*); do p=${p/.tpl/} && echo '<li><a href="'"$p"'">$(basename $p)</a></li><br>';done}}
         </ul>
         <p>
             This work © 2022 by Brian Mayer is licensed under
