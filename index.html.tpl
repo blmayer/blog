@@ -18,11 +18,10 @@
             <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
         </p>
     </article>
+    <div style="display: grid;grid-gap: 30px 20px;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
     <section>
     <a class="button" href="/feed.xml">RSS</a>
     <a class="button" href="https://blmayer.dev/whoami.html">About the author</a>
-    </section>
-    <section>
     <article>
         <b>what is this?</b>
 	<p>
@@ -31,14 +30,20 @@
 	    topics like programming, linux, mathematics and some random
 	    stuff.
 	</p>
-	<p><b>links</b></p>
+    </article>
+    </section>
+    <section>
+    <article>
+	<b>links</b>
         <ul>
 	    <li><a href="https://blmayer.dev">my portfolio</a></li><br>
 	    <li><a href="https://somafm.com">soma fm</a>, a radio i like</li><br>
-	    <li><a href="https://tilderadio.org">tilde radio</a>, another</li><br>
+	    <li><a href="https://tilde.town/users.html">webring</a></li><br>
+	    <li><a href="https://gossipsweb.net">handmade websites</a>, another</li><br>
         </ul>
     </article>
     </section>
+    </div>
 </body>
 
 </html>
