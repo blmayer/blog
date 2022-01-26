@@ -11,7 +11,7 @@
     <article>
         <b>posts:</b>
         <ul>
-            {{!for p in $(ls -r posts/*.html*); do p=${p/.tpl/} && echo '<li><a href="'"$p"'">'"$(basename $p)</a></li><br>";done}}
+            {{!for p in $(ls -r posts/*.html*); do p=${p/.tpl/} && echo '<li><a href="'"$p"'">'"$(basename $p)</a></li>";done}}
         </ul>
         <p>
             This work © 2022 by Brian Mayer is licensed under
@@ -36,10 +36,10 @@
     <article>
 	<b>links</b>
         <ul>
-	    <li><a href="https://blmayer.dev">my portfolio</a></li><br>
-	    <li><a href="https://somafm.com">soma fm</a>, a radio i like</li><br>
-	    <li><a href="https://tilde.town/users.html">webring</a></li><br>
-	    <li><a href="https://gossipsweb.net">handmade websites</a>, another</li><br>
+	    <li><a href="https://blmayer.dev">my portfolio</a></li>
+	    <li><a href="https://somafm.com">soma fm</a>, a radio i like</li>
+	    <li><a href="https://tilde.town/users.html">webring</a></li>
+	    <li><a href="https://gossipsweb.net">handmade websites</a></li>
         </ul>
     </article>
     </section>
