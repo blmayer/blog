@@ -1,16 +1,10 @@
-# Go templates
+# saucecodebar
 
-> Repo with a template for a go program/module.
+> Repo created from a template for a go program/module.
 
+This is my blog page, made with simple libs that really help.
 
-## Installing
-
-Run `go get github.com/USERNAME/THIS_PROJECT`.
-
-Then you must change some things:
-
-- Change *program.go* to match your program name
-- Change `template` string to your program name in all go files
+Tools: [weblibs](https://github.com/weblibs)
 
 
 ## Meta
@@ -23,9 +17,8 @@ Brian Mayer ([bleemayer@gmail.com](mailto:bleemayer@gmail.com))
 
 ### License
 
-Do not forget to change! See [LICENSE](LICENSE)
-
+Creative commons.
 
 ### Created
 
-Mar 15 2021
+Jan 16 2022
