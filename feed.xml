@@ -6,6 +6,11 @@
 	<link>https://saucecode.bar</link>
 	<atom:link rel="self" href="https:saucecode.bar/feed.xml" />
 	<item>
+		<title>go-switch-vs-map-benchmark.html</title>
+		<link>https://saucecode.bar/posts/05-go-switch-vs-map-benchmark.html</link>
+		<description>A benchmark between two solutions in golang</description>
+	</item>
+	<item>
 		<title>prioridade-zero-pt-br.html</title>
 		<link>https://saucecode.bar/posts/04-prioridade-zero-pt-br.html</link>
 		<description>Acho estranho as pessoas falarem prioridade zero quando é a prioridade máxima</description>

@@ -31,11 +31,6 @@ img {
     max-width: 100%;
 }
 
-ul li {
-    list-style: none;
-    line-height: 2.5;
-}
-
 @media (prefers-color-scheme: dark) {
     html {
         background-color: black;
