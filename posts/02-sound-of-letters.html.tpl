@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-{{head.html}}
+<head>
+	<style>
+		{{posts.css}}
+	</style>
+</head>
 
 <body>
 	<h2><a name="sound of letters">characters hitting the terminal</a></h2>

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-{{head.html}}
+
+<head>
+    {{head.html}}
+    <style>
+        {{index.css}}
+    </style>
+</head>
 
 <body>
     <header>
@@ -9,13 +15,9 @@
     </header>
     <p><em>a developer walks into a bar...</em></p>
     <article>
-        <b>posts:</b>
-        <ul>
-            {{!for p in $(ls -r posts/*.html*); do p=${p/.tpl/} && echo '<li><a href="'" $p"'">'"$(basename $p)</a></li>";done}}
-        </ul>
+        <b>posts</b>
         <p>
-            This work © 2022 by Brian Mayer is licensed under
-            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+        {{!for p in $(ls -r posts/*.html*); do p=${p/.tpl/} && echo '<a href="'" $p"'">'"$(basename $p)</a><br>";done}}
         </p>
     </article>
     <div style="display: grid;grid-gap: 30px 20px;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
@@ -35,14 +37,18 @@
         <section>
             <article>
                 <b>links</b>
-                <ul>
-                    <li><a href="https://blmayer.dev">my portfolio</a></li>
-                    <li><a href="https://somafm.com">soma fm</a>, a radio i like</li>
-                    <li><a href="https://tilde.town/users.html">webring</a></li>
-                    <li><a href="https://gossipsweb.net">handmade websites</a></li>
-                </ul>
+                <p>
+                    <a href="https://blmayer.dev">my portfolio</a><br>
+                    <a href="https://somafm.com">soma fm</a>, a radio i like<br>
+                    <a href="https://tilde.town/users.html">webring</a><br>
+                    <a href="https://gossipsweb.net">handmade websites</a><br>
+                <p>
             </article>
         </section>
+         <p>
+            This work © 2022 by Brian Mayer is licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+        </p>
     </div>
 </body>
 
