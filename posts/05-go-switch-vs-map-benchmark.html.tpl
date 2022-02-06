@@ -196,7 +196,7 @@ func BenchmarkMapCaseInt(b *testing.B) {
 }
 </pre>
 
-<p>And combined then in the same file.</p>
+<p>And combined them in the same file.</p>
 
 <h3>Results</h3>
 <p>
