@@ -23,7 +23,7 @@
         So it's easy to re-run commands. To show the command number on
         your prompt add <tt>\!</tt>. To your PS1 definition. Mine one is:
     </p>
-    <p><tt>"\u@\w \! $ "</tt></p>
+    <pre>"\u@\w \! $ "</pre>
 </body>
 
 </html>

@@ -77,16 +77,16 @@
         <kbd>aws-lambda-go/lambda/messages</kbd> package, and it's defined as:
     </p>
     <pre>
-    type InvokeRequest struct {
-        Payload               []byte
-        RequestId             string
-        XAmznTraceId          string
-        Deadline              InvokeRequest_Timestamp
-        InvokedFunctionArn    string
-        CognitoIdentityId     string
-        CognitoIdentityPoolId string
-        ClientContext         []byte
-    }
+type InvokeRequest struct {
+    Payload               []byte
+    RequestId             string
+    XAmznTraceId          string
+    Deadline              InvokeRequest_Timestamp
+    InvokedFunctionArn    string
+    CognitoIdentityId     string
+    CognitoIdentityPoolId string
+    ClientContext         []byte
+}
     </pre>
     <p>
         Luckily the only field that matters to us is <em>Payload</em>, and it
@@ -121,9 +121,9 @@
         <em>lambda.Start</em> function in the main file, here is an example:
     </p>
     <pre>
-    func Handler(req events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-        ...
-    }
+func Handler(req events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
+    ...
+}
     </pre>
     <p>
         In this case the input type for this function is an
@@ -143,29 +143,29 @@
         this is mine:
     </p>
     <pre>
-    {
-        "version": "0.2.0",
-        "configurations": [
-            {
-                "name": "Launch",
-                "type": "go",
-                "request": "launch",
-                "mode": "exec",
-                "program": "${workspaceFolder}/backend",
-                "env": {
-                    "_LAMBDA_SERVER_PORT": "8080"
-                },
-                "args": []
-            }
-        ],
-        "compounds": [
-            {
-                "name": "build and debug",
-                "configurations": ["Launch"],
-                "preLaunchTask": "build-debug"
-            }
-        ]
-    }
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "go",
+            "request": "launch",
+            "mode": "exec",
+            "program": "${workspaceFolder}/backend",
+            "env": {
+                "_LAMBDA_SERVER_PORT": "8080"
+            },
+            "args": []
+        }
+    ],
+    "compounds": [
+        {
+            "name": "build and debug",
+            "configurations": ["Launch"],
+            "preLaunchTask": "build-debug"
+        }
+    ]
+}
     </pre>
     <p>
         I chose port <em>8080</em> for the lambda, but you can change for
@@ -191,37 +191,37 @@
 
     <p>This is the tasks.json file I'm currently using:</p>
     <pre>
-    {
-        "version": "2.0.0",
-        "inputs": [
-            {
-                "id": "json",
-                "type": "command",
-                "command": "filePicker.pick",
-                "args": {
-                    "masks": "events/*.json",
-                    "display": {
-                        "type": "fileName",
-                        "json": "name"
-                    },
-                    "output": "fileRelativePath"
-                }
+{
+    "version": "2.0.0",
+    "inputs": [
+        {
+            "id": "json",
+            "type": "command",
+            "command": "filePicker.pick",
+            "args": {
+                "masks": "events/*.json",
+                "display": {
+                    "type": "fileName",
+                    "json": "name"
+                },
+                "output": "fileRelativePath"
             }
-        ],
-        "tasks": [
-            {
-                "label": "build-debug",
-                "type": "shell",
-                "command": "go build -v -gcflags='all=-N -l' ${file}"
-            },
-            {
-                "label": "event",
-                "type": "shell",
-                "command": "awslambdarpc -e ${input:json}",
-                "problemMatcher": []
-            }
-        ]
-    }
+        }
+    ],
+    "tasks": [
+        {
+            "label": "build-debug",
+            "type": "shell",
+            "command": "go build -v -gcflags='all=-N -l' ${file}"
+        },
+        {
+            "label": "event",
+            "type": "shell",
+            "command": "awslambdarpc -e ${input:json}",
+            "problemMatcher": []
+        }
+    ]
+}
     </pre>
     <p>
         Some explanation here: the <em>masks</em> field is where you point
