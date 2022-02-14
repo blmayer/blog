@@ -86,8 +86,7 @@ type InvokeRequest struct {
     CognitoIdentityId     string
     CognitoIdentityPoolId string
     ClientContext         []byte
-}
-    </pre>
+}</pre>
     <p>
         Luckily the only field that matters to us is <em>Payload</em>, and it
         is simply the JSON that will be passed to the lambda as input. The last
@@ -123,8 +122,7 @@ type InvokeRequest struct {
     <pre>
 func Handler(req events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
     ...
-}
-    </pre>
+}</pre>
     <p>
         In this case the input type for this function is an
         <em>APIGatewayProxyRequest</em> and the output type is a
@@ -165,8 +163,7 @@ func Handler(req events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse,
             "preLaunchTask": "build-debug"
         }
     ]
-}
-    </pre>
+}</pre>
     <p>
         I chose port <em>8080</em> for the lambda, but you can change for
         whatever you prefer. This <em>compounds</em> field is very convenient:
@@ -221,8 +218,7 @@ func Handler(req events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse,
             "problemMatcher": []
         }
     ]
-}
-    </pre>
+}</pre>
     <p>
         Some explanation here: the <em>masks</em> field is where you point
         the folder with your JSON events, you can change it at your discretion,
