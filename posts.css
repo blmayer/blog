@@ -32,7 +32,7 @@ img {
 }
 
 pre {
-    border: 2px solid white;
+    border: 2px solid black;
     padding: 11px 22px;
 }
 
@@ -51,6 +51,6 @@ pre {
     }
 
     pre {
-        border-color: black;
+        border-color: white;
     }
 }
