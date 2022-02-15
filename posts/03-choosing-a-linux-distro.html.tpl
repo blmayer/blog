@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>my story choosing a linux distro</title>
 	<style>
 		{{posts.css}}
 	</style>

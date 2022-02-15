@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>characters hitting the terminal</title>
 	<style>
 		{{posts.css}}
 	</style>

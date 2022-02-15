@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>my PS1 variable</title>
 	<style>
 		{{posts.css}}
 	</style>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <title>prioridade zero</title>
 	<style>
 		{{posts.css}}
 	</style>

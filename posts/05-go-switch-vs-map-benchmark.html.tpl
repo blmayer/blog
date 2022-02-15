@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <title>comparing switch case with map speed in go</title>
 	<style>
 		{{posts.css}}
 	</style>
 </head>
 
 <body>
-	<h2>Comparing switch case with map speed in go</h2>
+	<h2>comparing switch case with map speed in go</h2>
 	<p>
 		I decided to do a simple benchmark between two
 		solutions I often use in my code.
