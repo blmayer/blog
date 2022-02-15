@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <a class="button" href="/">Go Back</a>
     <h2><a name="ps1">my PS1 variable</a></h2>
     <p>
         I often use the linux terminal, and one thing that I use to help

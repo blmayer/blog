@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <a class="button" href="/">Go Back</a>
 	<h2><a name="sound of letters">characters hitting the terminal</a></h2>
 	<p>
 		sometimes i'm coding during the night, and seeing the output of a

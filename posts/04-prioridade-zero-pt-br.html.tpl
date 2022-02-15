@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <a class="button" href="/">Go Back</a>
 	<h2><a name="zero prioridade">prioridade zero</a></h2>
 	<p>
         Toda vez que escuto alguem falar "isso é prioridade zero", como se

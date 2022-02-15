@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <a class="button" href="/">Go Back</a>
 	<h2>Running and debugging Go Lambda functions locally</h2>
 	<p>
         A solution without CLIs, Docker or big frameworks; just a binary,

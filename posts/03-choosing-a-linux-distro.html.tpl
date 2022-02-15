@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <a class="button" href="/">Go Back</a>
 	<h2><a name="choosing linux">my story choosing a linux distro</a></h2>
 	<p>
 		I started using linux when I was 13/14 yo, can't remember exactly,

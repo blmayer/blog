@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <a class="button" href="/">Go Back</a>
 	<h2>comparing switch case with map speed in go</h2>
 	<p>
 		I decided to do a simple benchmark between two
