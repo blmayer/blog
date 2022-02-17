@@ -42,6 +42,7 @@
                     <a href="https://somafm.com">soma fm</a>, a radio i like<br>
                     <a href="https://tilde.town/users.html">webring</a><br>
                     <a href="https://gossipsweb.net">handmade websites</a><br>
+                    <a href="https://mussumipsum.com/">mussum ipsum</a><br>
                 <p>
             </article>
         </section>
