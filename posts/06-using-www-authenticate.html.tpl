@@ -116,7 +116,7 @@ func login(w http.ResponseWriter, r *http.Request) {
 		scheme the browser will send the credentials base64 encoded.
 	</p>
 	<p>
-		The nice thing about this is that the browser will keep sending the
+		the nice thing about this is that the browser will keep sending the
 		credentials to subsequent requests of the same domain until it receives
 		a <kbd>401</kbd> status as response.
 	</p>
