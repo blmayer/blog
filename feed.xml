@@ -6,6 +6,11 @@
 	<link>https://saucecode.bar</link>
 	<atom:link rel="self" href="https:saucecode.bar/feed.xml" />
 	<item>
+		<title>06-using-www-authenticate.html</title>
+		<link>https://saucecode.bar/posts/06-using-www-authenticate.html</link>
+		<description>This article explains how to use the www-authenticate header to handle user authentication without any client side code.</description>
+	</item>
+	<item>
 		<title>go-switch-vs-map-benchmark.html</title>
 		<link>https://saucecode.bar/posts/05-go-switch-vs-map-benchmark.html</link>
 		<description>A benchmark between two solutions in golang</description>
