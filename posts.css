@@ -17,6 +17,10 @@ body {
     line-height: 1.6;
 }
 
+footer {
+    font-size: small;
+}
+
 h1 {
     font-family: serif;
     display: inline;
@@ -57,10 +61,6 @@ pre {
     a.button {
         color: white;
         border-color: white;
-    }
-
-    hr {
-        border-bottom: 3px dashed gray;
     }
 
     pre {

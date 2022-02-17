@@ -107,10 +107,12 @@ func login(w http.ResponseWriter, r *http.Request) {
 		user, but be carefull, this option serves a purpose, check [1] for
 		more info. The dialog looks like this on chromium: 
 	</p>
-	<img src="chromium-dialog.png" alt="Chromium login dialog">
+	<center>
+		<img src="chromium-dialog.png" alt="Chromium login dialog">
+	</center>
 	<p>
 		cliking sign in makes the browser to repeat the request but with the
-		<em>Authorization: ...</em> header on, as i set it to <kbd>Basic</kbd>
+		<kbd>Authorization: ...</kbd> header on, as i set it to <kbd>Basic</kbd>
 		scheme the browser will send the credentials base64 encoded.
 	</p>
 	<p>
@@ -156,24 +158,28 @@ func logout(w http.ResponseWriter, r *http.Request) {
 	// serve a logout html page
 	...
 }</pre>
+
+	<h3>final remarks</h3>
+	<p>
+		this is the method i'm using right now and i find it pretty good: it
+		uses only standard features that are there for years, nothing new;
+		there is no client side javascript or cookies, which makes it 
+		easy to maintain and satisfy even the most demanding users.
+	</p>
 	<footer>
 		<hr>
-		<small>
-			<p>
-				<b>References:</b>
-				<ol>
-					<li>
-						<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate">
-							MDN docs</a>
-					</li>
-					<li>
-						<a href="https://datatracker.ietf.org/doc/html/rfc7616">
-							RFC 7616
-						</a>
-					</li>
-				</ol>
-			</p>
-		</small>
+		<p><b>References:</b></p>
+		<ol>
+			<li>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate">
+					MDN docs</a>
+			</li>
+			<li>
+				<a href="https://datatracker.ietf.org/doc/html/rfc7616">
+					RFC 7616
+				</a>
+			</li>
+		</ol>
 	</footer>
 </body>
 </html>
