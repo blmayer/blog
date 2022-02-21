@@ -41,8 +41,10 @@
                     <a href="https://blmayer.dev">my portfolio</a><br>
                     <a href="https://somafm.com">soma fm</a>, a radio i like<br>
                     <a href="https://tilde.town/users.html">webring</a><br>
+                    <a href="https://veneno.live/">radio veneno</a><br>
                     <a href="https://gossipsweb.net">handmade websites</a><br>
                     <a href="https://mussumipsum.com/">mussum ipsum</a><br>
+                    <a href="https://sebomosaico.com.br/">sebo mosaico</a><br>
                 <p>
             </article>
         </section>
