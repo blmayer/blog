@@ -22,7 +22,7 @@
 		on my backend. the documentation for the standard is available in [1].
 	</p>
 	<p>
-		the http www-authenticate header is a powerfull tool and part of the
+		the http www-authenticate header is a powerful tool and part of the
 		basic http authentication standard, but i only became aware of it
 		recently, in this post i'll tell how i used it to handle user sessions
 		on my project <a href="https://tasker.blmayer.dev">tasker</a>.
@@ -50,7 +50,7 @@
 		<kbd>WWW-Authenticate</kbd> on a response with status 401.
 		this will make browsers to show a dialog for the user to
 		prompt for the credentials. doing this the browser will
-		automaticaly send the <kbd>Authorization: ...</kbd> header
+		automatically send the <kbd>Authorization: ...</kbd> header
 		on requests.
 	</p>
 	<p>
@@ -104,14 +104,14 @@ func login(w http.ResponseWriter, r *http.Request) {
 		when browsers receive this header in the response they open a
 		dialog for the user, some aspects can be set, for example, if
 		<em>realm</em> is set on the header it will be displayed for the
-		user, but be carefull, this option serves a purpose, check [1] for
+		user, but be careful, this option serves a purpose, check [1] for
 		more info. The dialog looks like this on chromium: 
 	</p>
 	<center>
 		<img src="chromium-dialog.png" alt="Chromium login dialog">
 	</center>
 	<p>
-		cliking sign in makes the browser to repeat the request but with the
+		clicking sign in makes the browser to repeat the request but with the
 		<kbd>Authorization: ...</kbd> header on, as i set it to <kbd>Basic</kbd>
 		scheme the browser will send the credentials base64 encoded.
 	</p>
@@ -125,7 +125,7 @@ func login(w http.ResponseWriter, r *http.Request) {
 	<p>
 		now the users can log in, every time a private page is requested we
 		must check the credentials, in this project i used the <kbd>Basic</kbd>
-		scheme so i check it using go's propper http functions:
+		scheme so i check it using go's proper http functions:
 	</p>
 	<pre>
 user, pass, ok := r.BasicAuth()
