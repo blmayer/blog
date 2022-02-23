@@ -34,7 +34,7 @@
         <li>measure the time to retrieve an item</li>
     </ul>
     <p>
-        i've done that for values from 10 to 10000 using a shell script
+        i've done that for values from 5 to 10000 using a shell script
         to hardcode all values on the source file. the values are random
         strings of size 16.
     </p>
@@ -104,7 +104,7 @@ var mapInt10 = map[int]string{
     </p>
     <p>the test file was generated using the same strategy:</p>
     <pre>
-    package switchvsmap                    
+package switchvsmap                    
          
 import (
         "testing"                         
