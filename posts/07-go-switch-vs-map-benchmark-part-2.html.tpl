@@ -46,7 +46,6 @@ package switchvsmap
 func switchCaseInt5(input int) string {
         res := ""
         switch input {
-
         case 0: res = "9U5mScxLZLbQfj7y"
         case 1: res = "P0CoRrj0x7PwOZTO"
         case 2: res = "jAbhtkEBmEXlmQ15"
@@ -69,7 +68,6 @@ var mapInt5 = map[int]string{
 func switchCaseInt10(input int) string {
         res := ""
         switch input {
-
         case 0: res = "wylNCLjLylMZgjo9"
         case 1: res = "e6X044Vj9OyNliBC"
         case 2: res = "MfSoK3jCk3LujGUM"
