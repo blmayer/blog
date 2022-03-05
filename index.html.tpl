@@ -17,7 +17,7 @@
     <article>
         <b>posts</b>
         <p>
-        {{!for p in $(ls -r posts/*.html*); do p=${p/.tpl/} && echo '<a href="'" $p"'">'"$(basename $p)</a><br>";done}}
+        {{!for p in $(ls -r posts/*.html*); do l=${p/.tpl/} && echo '<a href="'"$l"'">'"$(grep '<title>' "$p" | sed 's@ *</\?title> *@@g')</a><br>";done}}
         </p>
     </article>
     <div style="display: grid;grid-gap: 30px 20px;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">

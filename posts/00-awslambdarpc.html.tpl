@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Running and debugging Go Lambda functions locally</title>
+	<title>running and debugging go lambda functions locally</title>
 	<style>
 		{{posts.css}}
 	</style>
