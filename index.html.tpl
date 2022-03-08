@@ -14,17 +14,17 @@
         <a class="button" href="https://github.com/blmayer/blog">View Sauce</a>
     </header>
     <p><em>a developer walks into a bar...</em></p>
-    <article>
+    <main>
         <b>posts</b>
         <p>
         {{!for p in $(ls -r posts/*.html*); do l=${p/.tpl/} && echo '<a href="'"$l"'">'"$(grep '<title>' "$p" | sed 's@ *</\?title> *@@g')</a><br>";done}}
         </p>
-    </article>
+    </main>
     <div style="display: grid;grid-gap: 30px 20px;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
         <section>
             <a class="button" href="/feed.xml">RSS</a>
             <a class="button" href="https://blmayer.dev/whoami.html">About the author</a>
-            <article>
+            <aside>
                 <b>what is this?</b>
                 <p>
                     this is a small space on the internet, like a bar, where i'd
@@ -32,10 +32,10 @@
                     topics like programming, linux, mathematics and some random
                     stuff.
                 </p>
-            </article>
+            </aside>
         </section>
         <section>
-            <article>
+            <aside>
                 <b>links</b>
                 <p>
                     <a href="https://blmayer.dev">my portfolio</a><br>
@@ -47,7 +47,7 @@
                     <a href="https://sebomosaico.com.br/">sebo mosaico</a><br>
                     <a href="https://angekold.goomer.app">angekold</a>, artisanal cold brew<br>
                 <p>
-            </article>
+            </aside>
         </section>
          <p>
             This work © 2022 by Brian Mayer is licensed under

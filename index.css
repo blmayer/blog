@@ -17,7 +17,7 @@ body {
     line-height: 1.6;
 }
 
-article {
+aside, main {
     line-height: 2;
     margin-top: 20px;
     border: 1px dotted black;
@@ -86,16 +86,16 @@ img {
         color: gainsboro;
     }
 
-    article {
+    aside, main {
         border-color: white;
         outline-color: white;
     }
 
-    article:before {
+    aside:before, main:before {
         border-color: white;
     }
 
-    article:after {
+    aside:before, main:after {
         border-color: white;
     }
 
