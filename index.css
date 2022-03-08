@@ -95,7 +95,7 @@ img {
         border-color: white;
     }
 
-    aside:before, main:after {
+    aside:after, main:after {
         border-color: white;
     }
 
