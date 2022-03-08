@@ -26,7 +26,7 @@ aside, main {
     position: relative;
 }
 
-article:before {
+aside:before, main:before {
     content: " ";
     position: absolute;
     top: 0px;
@@ -37,7 +37,7 @@ article:before {
     z-index: -1;
 }
 
-article:after {
+aside:after, main:after {
     content: " ";
     position: absolute;
     top: 1px;
