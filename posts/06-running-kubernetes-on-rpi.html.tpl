@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <title>prioridade zero</title>
-    <meta name="description" content="Acho estranho as pessoas falarem prioridade zero quando é a prioridade máxima">
-    <meta name="revised" content="2022-01-20">
 	<style>
 		{{posts.css}}
 	</style>
 </head>
 
 <body>
-    <a class="button" href="/">Go Back</a>
 	<h2><a name="zero prioridade">prioridade zero</a></h2>
+	sudo vim /boot/cmdline.txt add parameters
+
+	curl https://get.k3s.io > k3s.sh
+
+	./k3s.sh
+
+	sudo k3s server
 	<p>
         Toda vez que escuto alguem falar "isso é prioridade zero", como se
         aquila tarefa fosse a maior prioridade eu sinto uma dor. Como assim
@@ -26,12 +29,18 @@
         a 1 para 2, a 0 para 1 e finalmente inserir a nova prioridade. E
         assim até atualizarmos todas.
     </p>
-	<p>
+
+	sudo k3s certificate rotate
+<p>
         Quem usa essa essa nomenclatura parece não considerar que pode
         sim chegar uma tarefa mais urgente do que a atual, por mais urgente
         que ela pareça. Além de soar estranho, pois quando dizemos "prioridade
         máxima" parece um número grande, e não zero.
     </p>
+
+
+
+    sudo kubectl create deployment saucecodebar --image=registry.hub.docker.com/bleemayer/blog:latest
     <p>
         Então <b>use uma escala crescente para as prioridades</b>, pois sempre
         haverá espaço para uma tarefa mais prioritária: se sua tarefa

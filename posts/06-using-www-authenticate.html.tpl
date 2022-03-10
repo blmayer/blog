@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <title>using www-authenticate for user authentication</title>
 	<meta name="revised" content="2022-02-17">

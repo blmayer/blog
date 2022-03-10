@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<title>running and debugging go lambda functions locally</title>
+    <meta name="description" content="A small project of mine that I also published on Medium">
+    <meta name="revised" content="2021-10-18">
 	<style>
 		{{posts.css}}
 	</style>

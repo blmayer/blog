@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <title>my PS1 variable</title>
+    <meta name="description" content="A hint about using PS1 variable">
+    <meta name="revised" content="2021-11-02">
 	<style>
 		{{posts.css}}
 	</style>

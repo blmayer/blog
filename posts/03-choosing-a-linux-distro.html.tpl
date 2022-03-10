@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <title>my story choosing a linux distro</title>
+	<meta name="description" content="My initial journey on linux distros">
+    <meta name="revised" content="2021-12-25">
 	<style>
 		{{posts.css}}
 	</style>

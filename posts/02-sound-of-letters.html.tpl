@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <title>the sound of characters hitting the terminal</title>
+	<meta name="description" content="It's a strange thing">
+    <meta name="revised" content="2021-11-10">
 	<style>
 		{{posts.css}}
 	</style>

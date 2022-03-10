@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <title>comparing switch case with map speed in go</title>
+	<meta name="description" content="A benchmark between two solutions in golang">
+    <meta name="revised" content="2022-01-24">
 	<style>
 		{{posts.css}}
 	</style>

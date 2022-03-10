@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="en">
 <head>
     <title>comparing int switch case with map speed in go</title>
     <meta name="revised" content="2022-02-22">
