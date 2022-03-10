@@ -1,10 +1,10 @@
 FROM alpine:3.15 as builder
 
-RUN apk add tree curl
+RUN apk add curl
 
-COPY . /root
+COPY www www
 
-RUN cd /root && \
+RUN cd /www && \
 	rm -rf .git && \
 	curl "https://raw.githubusercontent.com/weblibs/template.sh/main/template" \
 	| sh && \
@@ -12,13 +12,11 @@ RUN cd /root && \
 	curl "https://raw.githubusercontent.com/weblibs/rssgen.sh/main/rssgen" \
 	| sh -s -- -a "saucecode.bar" -t "the saucecode bar feed" -d "Programming, math and random posts feed for Brian Mayer's blog" posts/*.html > feed.rss && \
 	curl "https://raw.githubusercontent.com/weblibs/genmap.sh/main/genmap" \
-	| sh -s -- -d "https://saucecode.bar" * > sitemap.txt && \
-	chmod a+x main
+	| sh -s -- -d "https://saucecode.bar" * > sitemap.txt
 
 FROM scratch
 
-COPY --from=builder /root/out/ /www
-
-WORKDIR /www
+COPY --from=builder /www/out/ /
+COPY main .
 
 CMD ["./main"]
