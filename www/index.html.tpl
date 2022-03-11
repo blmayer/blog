@@ -46,6 +46,7 @@
                     <a href="https://mussumipsum.com/">mussum ipsum</a><br>
                     <a href="https://sebomosaico.com.br/">sebo mosaico</a><br>
                     <a href="https://angekold.goomer.app">angekold</a>, artisanal cold brew<br>
+                    <a href="https://stackoverflow.com/questions/24837883/golang-templates-minus-function">discussion on golang templates</a><br>
                 <p>
             </aside>
         </section>
