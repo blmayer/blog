@@ -49,12 +49,12 @@
                 <p>
             </aside>
         </section>
-        <a class="button">Toilet &#8594;</a>
          <p>
             This work © 2022 by Brian Mayer is licensed under
             <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
         </p>
     </div>
+    <a class="button">Toilet &#8594;</a>
 </body>
 
 </html>
