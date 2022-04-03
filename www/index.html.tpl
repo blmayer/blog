@@ -27,11 +27,10 @@
             <aside>
                 <b>what is this?</b>
                 <p>
-                    this is a small space on the internet, like a bar, where i'd
-                    like to share some thoughts in a casual way. you'll find here
-                    topics like programming, linux, mathematics and some random
-                    stuff.
+                    this is a small space on the internet, like a bar, you'll find here
+                    topics like programming, linux, mathematics and some random stuff.
                 </p>
+                <p>we are a happy member of the <a href="//250kb.club">250Kb club</a>.</p>
             </aside>
         </section>
         <section>
@@ -50,6 +49,7 @@
                 <p>
             </aside>
         </section>
+        <a class="button">Toilet &#8594;</a>
          <p>
             This work © 2022 by Brian Mayer is licensed under
             <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
