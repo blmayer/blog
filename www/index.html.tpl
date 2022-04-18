@@ -22,7 +22,7 @@
     </main>
     <div style="display: grid;grid-gap: 30px 20px;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
         <section>
-            <a class="button" href="/feed.rss">RSS</a>
+            <a class="button" href="/feed.xml">RSS</a>
             <a class="button" href="https://blmayer.dev/whoami.html">About the author</a>
             <aside>
                 <b>what is this?</b>

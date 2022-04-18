@@ -10,7 +10,7 @@ RUN cd /www && \
 	| sh && \
 	cd out && \
 	curl "https://raw.githubusercontent.com/weblibs/rssgen.sh/main/rssgen" \
-	| sh -s -- -a "saucecode.bar" -t "the saucecode bar feed" -d "Programming, math and random posts feed for Brian Mayer's blog" posts/*.html > rss.xml && \
+	| sh -s -- -a "saucecode.bar" -t "the saucecode bar feed" -d "Programming, math and random posts feed for Brian Mayer's blog" posts/*.html > feed.xml && \
 	curl "https://raw.githubusercontent.com/weblibs/genmap.sh/main/genmap" \
 	| sh -s -- -d "https://saucecode.bar" * > sitemap.txt
 
