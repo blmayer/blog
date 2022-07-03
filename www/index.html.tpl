@@ -37,7 +37,7 @@
             <aside>
                 <b>links</b>
                 <p>
-                    <a href="https://blmayer.dev">my portfolio</a><br>
+                    <a href="https://www.blmayer.dev">my portfolio</a><br>
                     <a href="https://somafm.com">soma fm</a>, a radio i like<br>
                     <a href="https://tilde.town/users.html">webring</a><br>
                     <a href="https://veneno.live/">radio veneno</a><br>
